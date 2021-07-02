@@ -5,6 +5,7 @@ import {BrowserRouter, Route, Switch } from 'react-router-dom';
 import Footer from './Footer';
 //import Home from './Home';
 import '../App.css';
+import ShoppingCart from "./shoppingCart";
 
 function App() {
 
@@ -22,7 +23,7 @@ function App() {
     //   </Switch>
     //   <Footer/>    
     // </BrowserRouter>
-    <Footer/>
+      <ShoppingCart/>
   );
 }
 

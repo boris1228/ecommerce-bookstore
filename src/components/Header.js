@@ -9,17 +9,17 @@ import {Link} from "react-router-dom";
 export default function Header(){
 
 
-    return (             
+    return (
             // to use spacing from boothstrap my-5
-            <div className="header-container"> 
+            <div className="header-container">
                 <Container className="pg-max-width">
                     <Navbar variant="dark">
                         <NavbarBrand as={Link} to="/">Everyday low prices</NavbarBrand>
                         <Nav >
                             <Nav.Link as={Link} to="#">New Arrival</Nav.Link>
-                            <Nav.Link as={Link} to="#">Best Seller</Nav.Link> 
+                            <Nav.Link as={Link} to="#">Best Seller</Nav.Link>
                             <Nav.Link as={Link} to="#">Clearance</Nav.Link>
-                                                     
+
                         </Nav>
                         <Navbar.Toggle/>
 
@@ -35,10 +35,10 @@ export default function Header(){
                             {/* {!user && '/login'} : means only redirect to /login if no user */}
                             <Nav.Link as={Link} onClick={handleAuthentication} to={!user && '/user/sign-in'}>
                                 {user? 'Sign Out':'Sign In'}
-                            </Nav.Link>       
+                            </Nav.Link>
                             <Nav.Link as={Link} to={'#'}>
-                                <ShoppingCartIcon />                               
-                            </Nav.Link>                        
+                                <ShoppingCartIcon />
+                            </Nav.Link>
                         </Nav>
                         <Nav>
                             <SearchInput placeholder="Search Books" width="100%"/>
@@ -48,6 +48,6 @@ export default function Header(){
                 </Container>
             </div>
 
-    
+
     )
 }
