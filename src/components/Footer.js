@@ -1,5 +1,6 @@
 import React from 'react';
 import { SocialIcon } from 'react-social-icons';
+import '../css/Footer.css';
 
 const Footer = () => {
     const socialIconStyle = {  height: 40, width: 40};
