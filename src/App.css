@@ -36,3 +36,49 @@
     transform: rotate(360deg);
   }
 }
+
+
+/* Footer */
+.footer-container
+{
+  color: white;
+  background-color: #59c0e0;
+}
+
+.footer-container hr
+{
+  width: 90%;
+}
+
+.footer-column
+{
+  padding-top: 3em;
+  position:relative;
+  bottom: 0;
+  width: 100%;
+  padding: 50px;
+}
+
+.footer-row
+{
+  display: inline-flex;
+  width:100%;
+}
+
+.list-unstyled
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.list-unstyled li
+{
+  margin-top: 10px;
+}
+
+.column-sm
+{
+  text-align: center;
+  width: 100%;
+}
