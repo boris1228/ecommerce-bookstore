@@ -2,7 +2,7 @@ import {Link} from "react-router-dom";
 import {Container, Nav, Navbar, NavbarBrand, NavDropdown} from 'react-bootstrap';
 import {SearchInput} from "evergreen-ui";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
-//import './Header.css';
+import './Header.css';
 
 
 
