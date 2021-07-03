@@ -11,7 +11,7 @@ function App() {
 
 
   return (
-    
+      //
       //   <Switch>
       //     {/* <Route path="/product">
       //       <GeneralRoute/>
@@ -20,8 +20,8 @@ function App() {
       //       <Home />
       //     </Route>
       //   </Switch>
-    //   <Footer/>    
-    // </BrowserRouter>
+      //   <Footer/>
+      // </BrowserRouter>
       <ShoppingCart/>
   );
 }
