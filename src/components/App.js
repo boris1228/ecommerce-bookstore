@@ -11,7 +11,7 @@ function App() {
 
 
   return (
-           // tes
+    
       //   <Switch>
       //     {/* <Route path="/product">
       //       <GeneralRoute/>
