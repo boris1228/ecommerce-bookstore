@@ -22,7 +22,7 @@ function App() {
       //   </Switch>
       //   <Footer/>
       // </BrowserRouter>
-      <ShoppingCart/>
+      // <ShoppingCart/>
   );
 }
 
