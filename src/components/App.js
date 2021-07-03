@@ -11,17 +11,17 @@ function App() {
 
 
   return (
-      // t y
-    // <BrwserRoeuter>
-    //   <Header />   
-    //   <Switch>        
-    //     {/* <Route path="/product">
-    //       <GeneralRoute/>
-    //     </Route> */}
-    //     <Route path="/">    
-    //       <Home />                  
-    //     </Route>        
-    //   </Switch>
+      // t
+      // <BrwserRoeuter>
+      //   <Header />
+      //   <Switch>
+      //     {/* <Route path="/product">
+      //       <GeneralRoute/>
+      //     </Route> */}
+      //     <Route path="/">
+      //       <Home />
+      //     </Route>
+      //   </Switch>
     //   <Footer/>    
     // </BrowserRouter>
       <ShoppingCart/>
