@@ -11,7 +11,7 @@ function App() {
 
 
   return (
-      // thi e
+      // ti e
     // <BrowserRoeuter>
     //   <Header />   
     //   <Switch>        
