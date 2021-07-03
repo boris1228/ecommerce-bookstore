@@ -12,7 +12,7 @@ function App() {
 
   return (
       // t
-    // <BrowserRoeuter>
+    // <BrwserRoeuter>
     //   <Header />   
     //   <Switch>        
     //     {/* <Route path="/product">
