@@ -5,24 +5,29 @@ import {BrowserRouter, Route, Switch } from 'react-router-dom';
 import Footer from './Footer';
 //import Home from './Home';
 import '../App.css';
+import MyAccountPage from '../pages/MyAccountPage';
 
 function App() {
 
 
   return (
-    // <BrowserRouter>
-    //   <Header />   
-    //   <Switch>        
-    //     {/* <Route path="/product">
-    //       <GeneralRoute/>
-    //     </Route> */}
-    //     <Route path="/">    
-    //       <Home />                  
-    //     </Route>        
-    //   </Switch>
-    //   <Footer/>    
-    // </BrowserRouter>
-    <Footer/>
+    <BrowserRouter>
+      {/* <Header />    */}
+      <Switch>        
+        {/* <Route path="/product">
+          <GeneralRoute/>
+        </Route> */}
+        {/* <Route path="/">    
+          <Home />                  
+        </Route> */}
+
+        <Route path="/my-account">
+          <MyAccountPage/>
+        </Route>  
+
+      </Switch>
+      <Footer/>    
+    </BrowserRouter>
   );
 }
 
