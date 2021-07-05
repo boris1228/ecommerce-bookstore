@@ -1,0 +1,30 @@
+.single-order {
+    float: none;
+    margin: 5px auto;
+    border: 1px solid black;
+    width: 1000px;
+    height: 200px;
+}
+
+.single-order:hover {
+    box-shadow: 1px 3px 5px black;
+}
+
+.single-order img {
+    float: left;
+    width: 200px;
+    height: 200px;
+}
+
+.single-order .summary {
+    float: left;
+}
+
+.view-details {
+    float: right;
+    margin-top: 80px;
+    font-size: 20px;
+    width: 200px;
+    height: 40px;
+    text-decoration: none;
+}

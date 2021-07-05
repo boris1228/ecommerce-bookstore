@@ -45,7 +45,7 @@ const  LoginPage = () => {
         <div className={classes.paper}>
           
           <Typography className = "Logo-font" component="h1" variant="h5">
-            Login to iFun 
+            Login
           </Typography>
           <form className={classes.form} noValidate>
             <TextField

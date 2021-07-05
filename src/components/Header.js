@@ -1,8 +1,8 @@
 import {Link} from "react-router-dom";
-//import {Container, Nav, Navbar, NavbarBrand, NavDropdown} from 'react-bootstrap';
-//import {SearchInput} from "evergreen-ui";
-//import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
-//import './Header.css';
+import {Container, Nav, Navbar, NavbarBrand, NavDropdown} from 'react-bootstrap';
+// import {SearchInput} from "evergreen-ui";
+// import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
+import './Header.css';
 
 
 
@@ -33,15 +33,15 @@ export default function Header(){
                                 <NavDropdown.Item as={Link} to="#">Health</NavDropdown.Item>
                             </NavDropdown>
                             {/* {!user && '/login'} : means only redirect to /login if no user */}
-                            <Nav.Link as={Link} onClick={handleAuthentication} to={!user && '/user/sign-in'}>
+                            {/* <Nav.Link as={Link} onClick={handleAuthentication} to={!user && '/user/sign-in'}>
                                 {user? 'Sign Out':'Sign In'}
-                            </Nav.Link>
+                            </Nav.Link> */}
                             <Nav.Link as={Link} to={'#'}>
-                                <ShoppingCartIcon />
+                                {/* <ShoppingCartIcon /> */}
                             </Nav.Link>
                         </Nav>
                         <Nav>
-                            <SearchInput placeholder="Search Books" width="100%"/>
+                            {/* <SearchInput placeholder="Search Books" width="100%"/> */}
                         </Nav>
                         </Navbar.Collapse>
                     </Navbar>
