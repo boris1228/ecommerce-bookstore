@@ -43,7 +43,7 @@ const SignUpPage = () => {
             <CssBaseline />
             <div className={classes.paper}>
                 <Typography component="h1" variant="h5">
-                Sign Up to iFun
+                Sign Up
                 </Typography>
                 <form className={classes.form} noValidate>
                 <Grid container spacing={2}>

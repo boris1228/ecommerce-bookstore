@@ -6,7 +6,7 @@ import TextField from '@material-ui/core/TextField';
 const MyAccountPage = () => {
     return (
         <div>
-            <Header/>
+ 
                 <main>
                     <h1>My Account</h1>
                     <div>
@@ -37,7 +37,7 @@ const MyAccountPage = () => {
                         </ul>
                     </div>
                 </main>
-            <Footer/>
+     
         </div>
     )
 }

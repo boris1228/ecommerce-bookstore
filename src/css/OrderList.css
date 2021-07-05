@@ -1,0 +1,9 @@
+.order-list {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.order-list h2 {
+    font-size: 40px;
+    text-align: center;
+}
