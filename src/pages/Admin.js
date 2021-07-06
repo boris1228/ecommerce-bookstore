@@ -2,13 +2,13 @@ import LeftBar from '../components/LeftBar';
 import '../css/Admin.css';
 import Dashboard from '../components/Dashboard';
 
-const Body = () => {
+const Admin = () => {
     return (
-        <div className="body">
+        <div className="admin">
                 <LeftBar />
                 <Dashboard />
         </div>
     );
 }
 
-export default Body;
+export default Admin;
