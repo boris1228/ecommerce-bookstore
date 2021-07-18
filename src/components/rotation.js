@@ -13,6 +13,7 @@ export default function Book(){
                         className="d-block w-100"
                         src={`./img/book/${item}`}
                         alt="First slide"
+                        key={item}
                     />
                 </Carousel.Item>
                 ))};
