@@ -6,7 +6,7 @@ export default function Book(){
     return(
         <div className="mt-57">
         <Container className="pg-max-width">
-            <Carousel>
+            <Carousel key={1}>
                 {bookImgs.map(item=>(
                 <Carousel.Item>
                     <img
