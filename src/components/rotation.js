@@ -8,7 +8,7 @@ export default function Book(){
         <Container className="pg-max-width">
             <Carousel>
                 {bookImgs.map(item=>(
-                <Carousel.Item>
+                <Carousel.Item key={item}>
                     <img
                         className="d-block w-100"
                         src={`./img/book/${item}`}
