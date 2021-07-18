@@ -6,7 +6,7 @@ orbs:
   # The Node.js orb contains a set of prepackaged CircleCI configuration you can utilize
   # Orbs reduce the amount of configuration required for common tasks. 
   # See the orb documentation here: https://circleci.com/developer/orbs/orb/circleci/node
-  node: circleci/node@4.1
+  node: circleci/heroku@7.47.7
 
 
 jobs:
@@ -42,3 +42,10 @@ workflows:
       - build-and-test
       # For running simple node tests, you could optionally use the node/test job from the orb to replicate and replace the job above in fewer lines.
       # - node/test
+      - heroku/deploy-via-git: 
+        app-name: $peaceful-joshua-tree-57721
+        requires:
+          -build
+          filters:
+            branches:
+              only: main
