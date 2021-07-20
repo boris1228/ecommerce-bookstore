@@ -9,7 +9,7 @@ build:
     - echo "Start building App"
     - npm install
     - npm build
-    - echo "New Build successfully!"
+    - echo "Build successfully!"
 
 test:
   stage: test
