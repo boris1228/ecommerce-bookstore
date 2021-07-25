@@ -1,0 +1,15 @@
+  
+.feature-section-container{
+    margin-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #003452;
+}
+
+.feature-section-container h5 {
+    color: rgb(235, 227, 227);
+    font-weight: 800;
+} 
+
+.row-poster{
+    display: flex;
+}

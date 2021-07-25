@@ -1,0 +1,14 @@
+.product-hero-background {
+    background-size: auto 100%;
+    /* no-repeat always need to be included */
+    background-repeat: no-repeat; 
+    background-position: top right;
+}
+
+.product-hero-background > div {
+    background: linear-gradient(90deg,#051c2b 50%,transparent 70%);
+}
+
+.product-main-section{
+    min-height: 400px;
+}

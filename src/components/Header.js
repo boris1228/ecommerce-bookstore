@@ -16,9 +16,9 @@ export default function Header(){
                     <Navbar variant="dark">
                         <NavbarBrand as={Link} to="/">Everyday low prices</NavbarBrand>
                         <Nav >
-                            <Nav.Link as={Link} to="#">New Arrival</Nav.Link>
-                            <Nav.Link as={Link} to="#">Best Seller</Nav.Link>
-                            <Nav.Link as={Link} to="#">Clearance</Nav.Link>
+                            <Nav.Link as={Link} to="/product/new-arrival">New Arrival</Nav.Link>
+                            <Nav.Link as={Link} to="/product/best-seller">Best Seller</Nav.Link>
+                            <Nav.Link as={Link} to="/product/clearance">Clearance</Nav.Link>
 
                         </Nav>
                         <Navbar.Toggle/>

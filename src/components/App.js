@@ -1,6 +1,6 @@
 import React from 'react';
 import {BrowserRouter, Route, Switch } from 'react-router-dom';
-//import GeneralRoute from './Router/GeneralRoute';
+import GeneralRoute from '../pages/GeneralRoute';
 import Header from './Header';
 import Footer from './Footer';
 import HomePage from '../pages/HomePage';
@@ -12,6 +12,9 @@ import OrderDetails from '../pages/OrderDetails';
 import OrderList from '../pages/OrderList';
 import MyAccountPage from '../pages/MyAccountPage';
 import '../css/App.css';
+
+
+
 function App() {
 
 
@@ -20,7 +23,7 @@ function App() {
       <Header/>
         <Switch>
           <Route exact path="/product">
-            {/* <GeneralRoute/> */}
+            <GeneralRoute/>
           </Route>
 
           <Route exact path="/">
