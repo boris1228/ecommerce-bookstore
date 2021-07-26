@@ -1,6 +1,7 @@
 import React from 'react';
 import { SocialIcon } from 'react-social-icons';
 import '../css/Footer.css';
+import {Link} from "react-router-dom";
 
 const Footer = () => {
     const socialIconStyle = {  height: 40, width: 40};
@@ -37,6 +38,8 @@ const Footer = () => {
                         <li>Profile(link)</li>
                         <li>Wishlist(link)</li>
                         <li>Order History(link)</li>
+                        <Link to ='/shoppingCart' ><li>Cart</li></Link>
+
                     </ul>
                 </div>
                 
