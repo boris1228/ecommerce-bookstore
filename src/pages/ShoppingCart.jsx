@@ -10,7 +10,6 @@ import axios from "axios";
 import {Link} from "react-router-dom";
 
 
-
 const ShoppingCart = ({books}) => {
     
     const [bookes, setBookes] = useState({hits: []});
@@ -52,7 +51,7 @@ const ShoppingCart = ({books}) => {
         total();
     }, [book]);
     
-     const total = () => {
+    const total = () => {
         let price = 0;
         for (let i = 0; i < book.length; i++) {
             price += book[i].price;
@@ -62,14 +61,14 @@ const ShoppingCart = ({books}) => {
     const addToCart = (el) => {
         setBook([...book, el]);
     };
-     const listItems = items.map((el) => (
+    const listItems = items.map((el) => (
         
         <div key={el.id}>
             {`${el.name}: $${el.pageCount}`}
             <input type="submit" value="add" onClick={() => addToCart(el)}/>
         </div>
     ));
-     const cartItems = book.map((el) => (
+    const cartItems = book.map((el) => (
         <div key={el.id}>
             {`${el.name}: $${el.price} \n`}
             <input type="submit" value="Delete" onClick={() => deleteFromCart(el)}/>
