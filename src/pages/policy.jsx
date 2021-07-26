@@ -79,10 +79,7 @@ const Policy = () => {
                     
                         <div className="col-md-9">
                             <p>
-                                Book Depot Inc. (“Book Depot” or “us” or “we” or “our”) owns and operates the <a
-                                href="https://www.bookoutlet.com">bookoutlet.com</a> and <a
-                                href="https://www.bookoutlet.ca">bookoutlet.ca</a>,
-                                (each a “Site”). This Privacy Policy (“Policy”) contains details about how Book Depot
+                               This Privacy Policy (“Policy”) contains details about how we
                                 collects, uses, shares and stores your information when you use the Site, do business
                                 with us
                                 over the telephone, send us emails or faxes, interact with us through social media, or
