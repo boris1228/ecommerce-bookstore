@@ -13,23 +13,8 @@ import {Link} from "react-router-dom";
 const ShoppingCart = ({books}) => {
     
     const [bookes, setBookes] = useState({hits: []});
-    
-    
     const [book, setBook] = useState([]);
     const [subTotal, setSubTotal] = useState(0);
-    
-    // useEffect(() => {
-    //     const fetchData = async () => {
-    //         const result = await axios(
-    //             'https://bookstore-fake-server.herokuapp.com/books',
-    //         );
-    //
-    //         setData(result.data);
-    //     };
-    //     fetchData();
-    // }, []);
-    //
-    
     const items = [
         {
             id: 1,
