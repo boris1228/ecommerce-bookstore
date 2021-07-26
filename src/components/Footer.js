@@ -29,16 +29,13 @@ const Footer = () => {
                 <div className="footer-column">
                     <h3>Help</h3>
                     <ul className="list-unstyled">
-                        <Link to="../pages/A">About</Link>
-                        <a href="../pages/About.html">
-                            <li>About</li>
-                        </a>
-                        <a href="file:///D:/Data/Scenca%20college/Second%20semester/Applied%20Capstone%20Project%20CAP805/ecommerce-bookstore/src/pages/contactUs.html">
+                        <Link to="/about">About</Link>
+                        <Link to="/contact">
                             <li>Contact Us</li>
-                        </a>
-                        <a href="../pages/policy.html">
+                        </Link>
+                        <Link to="/policy">
                             <li>Policy</li>
-                        </a>
+                        </Link>
                     
                     
                     </ul>

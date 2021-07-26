@@ -6,9 +6,12 @@ const About = () => {
         
         
         <div>
+            <br/><br/><br/>
             <h1>
                 About
             </h1>
+            <br/>
+            
             <h5> Enchanting the Mind, One Book at a Time
             </h5>
             <p>
@@ -29,6 +32,7 @@ const About = () => {
                 accessible to all.
             
             </p>
+            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
         
         </div>
     

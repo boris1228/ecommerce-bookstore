@@ -7,8 +7,9 @@ import total from "./ShoppingCart";
 const Checkout = () => {
     
     return (
-        
         <div>
+            <br/><br/><br/>
+    
             <Header/>
             
             
