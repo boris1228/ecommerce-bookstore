@@ -8,9 +8,8 @@ const Checkout = () => {
     
     return (
         <div>
-            <br/><br/><br/>
+            <br/><br/><br/> <br/><br/>   <br/>
     
-            <Header/>
             
             
             <h1>test</h1>

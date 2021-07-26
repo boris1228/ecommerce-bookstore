@@ -49,7 +49,7 @@ const ShoppingCart = ({books}) => {
     const listItems = items.map((el) => (
         
         <div key={el.id}>
-            {`${el.name}: $${el.pageCount}`}
+            {`${el.name}: $${el.price}`}
             <input type="submit" value="add" onClick={() => addToCart(el)}/>
         </div>
     ));
@@ -76,6 +76,7 @@ const ShoppingCart = ({books}) => {
 // test
     return (
         <div>
+            <br/><br/><br/><br/>
             <Header/>
             
             <br/><br/><br/><br/>
@@ -87,10 +88,11 @@ const ShoppingCart = ({books}) => {
             {/*        </li>*/}
             {/*    ))}*/}
             {/*</ul>*/}
+            <br/><br/>
             <h5>Shopping Cart</h5>
             <div>
                 {cartItems}
-                <br/><br/>
+                <br/><br/>  
                 <div><b>Subtotal:</b> ${subTotal}</div>
                 <div>
                     <div className="d-grid gap-2 d-md-flex justify-content-md-end">
@@ -101,7 +103,6 @@ const ShoppingCart = ({books}) => {
                         
                         </Link>
                     </div>
-                    <Footer/>
                 </div>
             </div>
         

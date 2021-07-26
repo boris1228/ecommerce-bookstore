@@ -15,6 +15,7 @@ import '../css/App.css';
 import About from "../pages/about";
 import ContactUs from "../pages/contactUs";
 import Policy from "../pages/policy";
+import Checkout from "../pages/checkout";
 
 
 function App() {
@@ -68,6 +69,9 @@ function App() {
                 </Route>
                 <Route exact path="/policy">
                     <Policy/>
+                </Route>
+                <Route exact path="/checkout">
+                    <Checkout/>
                 </Route>
             </Switch>
             <Footer/>
