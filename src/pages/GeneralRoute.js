@@ -8,37 +8,36 @@ import { Container } from 'react-bootstrap';
 
 function GeneralRoute(){
     const match = useRouteMatch();
-    const [allBooks, setBooks]= useState([]);
+    const [allMovies, setMovies]= useState([]);
  
-
-    //Retrieve Book
     useEffect(() => {
-      fetch("https://bookstore-fake-server.herokuapp.com/books")
-        .then((res) => res.json())
-        .then((books) => {
-          setBooks(books);
-        });
-    }, []);
+        fetch("https://fake-book-db.herokuapp.com/books")
+          .then((res) => res.json())
+          .then((movies) => {
+            setMovies(movies);
+          });
+      }, []);
+
 
     return(        
         <Switch>
             <Route path={`${match.path}/new-arrival`}>
                 <Container className="pg-max-width">
-                    <BookCollection title={"New Arrival"}  content={allBooks.filter((book) => book.categories = "Open Source")}/>
+                    <BookCollection title={"New Arrival"}  content={allMovies.filter((movie) => movie.genre_ids === 1)} />
                 </Container>
                 
             </Route>
             <Route path={`${match.path}/best-seller`}>
                 <Container className="pg-max-width">
-                    <BookCollection title={"Best Seller"} content={allBooks.filter((book) => book.categories = "Java")} />
+                    <BookCollection title={"Best Seller"} content={allMovies.filter((movie) => movie.genre_ids === 2)} />
                 </Container>
             </Route>
             <Route path={`${match.path}/clearance`}>
                 <Container className="pg-max-width">
-                    <BookCollection title={"Clearance"} content={allBooks.filter((book) => book.categories = "Web Development")} />
+                    <BookCollection title={"Clearance"} content={allMovies.filter((movie) => movie.genre_ids === 3)} />
                 </Container>
             </Route>
-            <Route path={`${match.path}/:isbn`}>
+            <Route path={`${match.path}/:id`}>
                 <ProductDescription />        
             </Route>
             <Route path={`${match.path}`}>
