@@ -1,6 +1,4 @@
 import React from 'react';
-import Header from "../components/Header";
-import Footer from "../components/Footer";
 import cartItems from "./ShoppingCart";
 import total from "./ShoppingCart";
 
@@ -8,10 +6,7 @@ const Checkout = () => {
     
     return (
         <div>
-            <br/><br/><br/> <br/><br/>   <br/>
-    
-            
-            
+            <br/><br/><br/> <br/><br/> <br/>
             <h1>test</h1>
             <h1>Review your order </h1>
             <form className="row g-3">
@@ -50,13 +45,11 @@ const Checkout = () => {
                 {total}
                 
                 
-                
                 <div className="col-12">
                     <button type="submit" className="btn btn-primary">Place your order</button>
                 </div>
             </form>
-            
-            <Footer/>
+        
         
         </div>
     

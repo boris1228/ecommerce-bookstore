@@ -1,13 +1,7 @@
 import React, {useEffect, useState} from 'react';
-
-
 import '../css/shoppingCart.css'
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import CheckOutBox from "../components/shoppingCart/check-out-box";
-import {useFetch} from "use-http";
-import axios from "axios";
 import {Link} from "react-router-dom";
+
 
 
 const ShoppingCart = ({books}) => {
@@ -77,8 +71,6 @@ const ShoppingCart = ({books}) => {
     return (
         <div>
             <br/><br/><br/><br/>
-            <Header/>
-            
             <br/><br/><br/><br/>
             <div>{listItems}</div>
             {/*<ul>*/}
@@ -92,7 +84,7 @@ const ShoppingCart = ({books}) => {
             <h5>Shopping Cart</h5>
             <div>
                 {cartItems}
-                <br/><br/>  
+                <br/><br/>
                 <div><b>Subtotal:</b> ${subTotal}</div>
                 <div>
                     <div className="d-grid gap-2 d-md-flex justify-content-md-end">
