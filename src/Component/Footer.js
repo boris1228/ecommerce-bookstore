@@ -11,7 +11,7 @@ const Footer = () => {
             <div className = "ml-5">
 
                 <div className = "mt-3">
-                    <h3>Bookstore</h3>
+                    <h3>Logo</h3>
                 </div>
 
                 <Row className = "mt-4">

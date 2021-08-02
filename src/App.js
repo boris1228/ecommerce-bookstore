@@ -7,22 +7,33 @@ import Header from './Component/Header';
 import Footer from './Component/Footer';
 import Home from './Component/Home';
 
-
+import {auth} from './Component/firebase';
+import {useStateValue} from './Component/StateProvider'
 
 
 
 function App() {
   const [allMovies, setMovies]= useState([]);
- 
+  const [{}, dispatch] = useStateValue();
 
-  //Retrieve movie
-  // useEffect(() => {
-  //   fetch("https://fake-moviedb.herokuapp.com/movies")
-  //     .then((res) => res.json())
-  //     .then((movies) => {
-  //       setMovies(movies);
-  //     });
-  // }, []);
+  useEffect(() => {
+    auth.onAuthStateChanged(authUser =>{
+      console.log("User is: ", authUser);
+      if(authUser){
+        dispatch({
+          type: 'SET_USER',
+          user: authUser
+        })
+      } else {
+        dispatch({
+          type: 'SET_USER',
+          user: null
+        })
+      }
+    })
+  }, []) 
+
+
 
   return (
     <BrowserRouter>

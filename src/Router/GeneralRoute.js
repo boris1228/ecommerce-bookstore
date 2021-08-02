@@ -10,15 +10,14 @@ function GeneralRoute(){
     const match = useRouteMatch();
     const [allMovies, setMovies]= useState([]);
  
-
-    //Retrieve movie
     useEffect(() => {
-      fetch("https://fake-book-db.herokuapp.com/books")
-        .then((res) => res.json())
-        .then((movies) => {
-          setMovies(movies);
-        });
-    }, []);
+        fetch("https://fake-book-db.herokuapp.com/books")
+          .then((res) => res.json())
+          .then((movies) => {
+            setMovies(movies);
+          });
+      }, []);
+
 
     return(        
         <Switch>
