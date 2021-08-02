@@ -1,0 +1,12 @@
+.background-container{
+    height: 100%;
+    background-color: #e9afad;
+}
+
+.form-container{
+    background-color: #fff;
+    width: 500px;
+    padding: 20px;
+    margin: 60px auto 30px ;
+    border-radius: 2%;
+}

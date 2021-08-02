@@ -1,0 +1,12 @@
+
+.header-container {
+    background : linear-gradient(90deg, #ff9191,#ff2727 100%);
+    position : fixed;
+    top : 0;
+    left : 0;
+    right : 0;
+    z-index : 11; 
+    margin-bottom: 30px;
+
+
+}

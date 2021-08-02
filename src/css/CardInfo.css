@@ -1,0 +1,23 @@
+
+.movie-title {
+    font-size: 28px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.movie-description {
+    width: 412px;
+    text-align: left;
+    padding: 5px 0 50px 0;
+}
+
+.movie-button {
+    width: 165px;
+    height: 42px;
+    margin: 0 5px;
+    color: white;
+    background-color: #007bc4;
+    border: none;
+    border-radius: 6px;
+
+}
