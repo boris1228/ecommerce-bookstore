@@ -9,7 +9,7 @@ import { auth } from "./firebase";
 
 export default function Header(){
     const[{basket,user}, dispatch] = useStateValue();
-
+    
     const handleAuthentication = () =>{
         if(user){
             auth.signOut();
@@ -39,7 +39,9 @@ export default function Header(){
                         <Navbar.Collapse className="justify-content-end">
                         
                       <Nav>
-                        
+                      <Nav.Link as={Link} onClick={handleAuthentication} >
+                                
+                            </Nav.Link>  
                         <Nav.Link as={Link} onClick={handleAuthentication} to={!user && '/user/sign-in'}>
                                 {user? 'Sign Out':'Sign In'}
                             </Nav.Link>       

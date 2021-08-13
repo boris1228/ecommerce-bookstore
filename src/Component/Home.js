@@ -8,7 +8,7 @@ import { useState, useEffect} from 'react'
 function Home(){
     const [allMovies, setMovies]= useState([]);
     useEffect(() => {
-        fetch("https://fake-book-db.herokuapp.com/books")
+        fetch("https://afternoon-caverns-41327.herokuapp.com/books")
           .then((res) => res.json())
           .then((movies) => {
             setMovies(movies);
