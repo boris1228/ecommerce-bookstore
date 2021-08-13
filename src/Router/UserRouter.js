@@ -1,8 +1,9 @@
 import { Route, Switch, useRouteMatch} from 'react-router-dom';
 
+// import SignIn from '../Component/SignIn';
+// import Registration from '../Component/Register';
 import SignIn from '../Component/SignIn';
-import Registration from '../Component/Register';
-
+import Checkout from '../Component/Checkout';
 
 
 export default function UserRouter(){
@@ -13,10 +14,12 @@ export default function UserRouter(){
                 <SignIn />
             </Route>
 
-            <Route path={`${match.path}/register`}>
+            {/* <Route path={`${match.path}/register`}>
                 <Registration />
+            </Route> */}
+   <Route path={`${match.path}/check-out`}>
+                <Checkout />
             </Route>
-   
         </Switch>
     )
 

@@ -11,7 +11,7 @@ function GeneralRoute(){
     const [allMovies, setMovies]= useState([]);
  
 
-    //Retrieve movie
+   
     useEffect(() => {
       fetch("https://fake-book-db.herokuapp.com/books")
         .then((res) => res.json())
@@ -48,7 +48,6 @@ function GeneralRoute(){
                     <BookCollection title={"Web"} content={allMovies.filter((movie) => movie.id >12 && movie.id <25)} />
                 </Container>
             </Route>
-      
             <Route path={`${match.path}/:id`}>
                 <ProductDescription />        
             </Route>

@@ -1,9 +1,9 @@
 import Hero from './Hero';
-import MovieCollection from './BookCollection';
+import BookCollection from './BookCollection';
 import { useState, useEffect} from 'react'
 
  
-
+//
 
 function Home(){
     const [allMovies, setMovies]= useState([]);
@@ -17,9 +17,8 @@ function Home(){
     return (
         <>
             <Hero/>
-            <MovieCollection title={"New Release"} content={allMovies.filter((movie) => movie.genre_ids === 2)} />
-            <MovieCollection title={"Featured Books"} content={allMovies.filter((movie) => movie.genre_ids === 1)} />
-            
+            <BookCollection title={"New Release"} content={allMovies.filter((movie) => movie.genre_ids === 2)} />
+            <BookCollection title={"Featured Books"} content={allMovies.filter((movie) => movie.genre_ids === 1)} />
            
         
         </>
