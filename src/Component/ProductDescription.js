@@ -17,6 +17,7 @@ export default function ProductDescription(){
     const [movie, setMovie] = useState(null);
     const [isLoading, setIsLoading] = useState(true);
     useEffect(() => {
+        console.log(movie)
         fetch(`https://fake-book-db.herokuapp.com/books/${id}`)
           .then((res) => res.json())
           .then((movie) => {
