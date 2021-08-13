@@ -39,7 +39,7 @@ export default function FeaturedSection(props){
                         <Col xs={4} md={3} lg={2} key={result.id}>
                             <SmallImgCard movie={result}/>
                         </Col>
-                    ))};
+                    ))}
                 </Row>                
             </Container>
         </div>
