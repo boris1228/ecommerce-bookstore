@@ -1,5 +1,5 @@
-import { useState, useEffect} from 'react'
-import {BrowserRouter, Route, Switch } from 'react-router-dom';
+import { useState, useEffect } from 'react'
+import { BrowserRouter, Route, Switch, useParams } from 'react-router-dom';
 import GeneralRoute from './Router/GeneralRoute';
 import AdminRouter from './Router/AdminRouter';
 import UserRouter from './Router/UserRouter';
@@ -9,19 +9,19 @@ import Home from './Component/Home';
 import OrderList from './pages/OrderList';
 import OrderDetails from './pages/OrderDetails';
 
-import {auth} from './Component/firebase';
-import {useStateValue} from './Component/StateProvider'
+import { auth } from './Component/firebase';
+import { useStateValue } from './Component/StateProvider'
 
 //
 
 function App() {
-  const [allMovies, setMovies]= useState([]);
-  const [{}, dispatch] = useStateValue();
+  const [allMovies, setMovies] = useState([]);
+  const [{ }, dispatch] = useStateValue();
 
   useEffect(() => {
-    auth.onAuthStateChanged(authUser =>{
+    auth.onAuthStateChanged(authUser => {
       console.log("User is: ", authUser);
-      if(authUser){
+      if (authUser) {
         dispatch({
           type: 'SET_USER',
           user: authUser
@@ -33,9 +33,9 @@ function App() {
         })
       }
     })
-  }, []) 
+  }, [])
 
- 
+
   useEffect(() => {
     fetch("https://afternoon-caverns-41327.herokuapp.com/books")
       .then((res) => res.json())
@@ -46,25 +46,25 @@ function App() {
 
   return (
     <BrowserRouter>
-      <Header />   
-      <Switch>        
+      <Header />
+      <Switch>
         <Route exact path="/user">
           <UserRouter />
         </Route>
         <Route exact path="/product">
-          <GeneralRoute/>
+          <GeneralRoute />
         </Route>
-        <Route exact path="/">    
-          <Home />                  
-        </Route>   
+        <Route exact path="/">
+          <Home />
+        </Route>
         <Route exact path="/orderlist">
           <OrderList />
-        </Route>    
-        <Route exact path="/orderdetail">
+        </Route>
+        <Route exact path="/orderdetails/:id">
           <OrderDetails />
         </Route>
       </Switch>
-      <Footer/>    
+      <Footer />
     </BrowserRouter>
   );
 }

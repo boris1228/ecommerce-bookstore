@@ -1,34 +1,22 @@
 import "../css/OrderDetails.css";
+import useFetch from "../Component/useFetch";
+import { useParams } from "react-router-dom";
+import Detail from "../Component/Detail";
 
 const OrderDetails = () => {
-    return ( 
+
+    const id = useParams().id;
+    console.log(id);
+
+    const { data: order, orderIsPending, orderError } = useFetch("https://afternoon-caverns-41327.herokuapp.com/order/" + id);
+
+    return (
         <div className="order-details">
-            <img src="" alt="book" />
-            <h3>Order Summary</h3>
-            <div className="title">
-                <p>Order Status: </p>
-                <p>Order Number: </p>
-                <p>Item(s) Subtotal: </p>
-                <p>Shipping & Handeling: </p>
-                <p>Total before tax: </p>
-                <p>Estimated GST/HST: </p>
-                <p>Grand Total: </p>
-            </div>
-            <div className="details">
-                <p>Delivered</p>
-                <p>123445566</p>
-                <p>$300.00</p>
-                <p>$0.00</p>
-                <p>$300.00</p>
-                <p>$39.00</p>
-                <p>$339.00</p>
-            </div>
-            <div className="choice">
-                <button>Cancel This Order</button>
-                <button>Start a Return</button>
-            </div>
+            {orderIsPending && <p>Loading...</p>}
+            {orderError && <p>{orderError}</p>}
+            {order && <Detail order={order}/>}
         </div>
-     );
+    );
 }
- 
+
 export default OrderDetails;
