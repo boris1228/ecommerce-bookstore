@@ -6,6 +6,8 @@ import UserRouter from './Router/UserRouter';
 import Header from './Component/Header';
 import Footer from './Component/Footer';
 import Home from './Component/Home';
+import OrderList from './pages/OrderList';
+import OrderDetails from './pages/OrderDetails';
 
 import {auth} from './Component/firebase';
 import {useStateValue} from './Component/StateProvider'
@@ -46,15 +48,21 @@ function App() {
     <BrowserRouter>
       <Header />   
       <Switch>        
-        <Route path="/user">
+        <Route exact path="/user">
           <UserRouter />
         </Route>
-        <Route path="/product">
+        <Route exact path="/product">
           <GeneralRoute/>
         </Route>
-        <Route path="/">    
+        <Route exact path="/">    
           <Home />                  
-        </Route>        
+        </Route>   
+        <Route exact path="/orderlist">
+          <OrderList />
+        </Route>    
+        <Route exact path="/orderdetail">
+          <OrderDetails />
+        </Route>
       </Switch>
       <Footer/>    
     </BrowserRouter>

@@ -1,10 +1,9 @@
 import "../css/OrderDetails.css";
-import book from "../image/book.jpg";
 
 const OrderDetails = () => {
     return ( 
         <div className="order-details">
-            <img src={book} alt="book" />
+            <img src="" alt="book" />
             <h3>Order Summary</h3>
             <div className="title">
                 <p>Order Status: </p>
